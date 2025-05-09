@@ -41,7 +41,7 @@ def main():
     wallets = get_wallets()
     top_wallets = filter_wallets(wallets)
     if top_wallets:
-        for wallet in top_wallets[:5]:
+        for wallet in top_wallets[:10]:
             send_to_telegram(wallet)
     else:
         send_to_telegram({
